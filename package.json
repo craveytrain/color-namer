@@ -1,0 +1,44 @@
+{
+	"$schema": "https://www.raycast.com/schemas/extension.json",
+	"name": "color-namer",
+	"title": "Color Namer",
+	"description": "Returns the color name most closely matching the selected color.",
+	"icon": "command-icon.png",
+	"author": "craveytrain",
+	"license": "MIT",
+	"commands": [
+		{
+			"name": "index",
+			"title": "Name Color",
+			"description": "Names the color",
+			"mode": "view"
+		}
+	],
+	"dependencies": {
+		"@raycast/api": "^1.38.2",
+		"color-convert": "^2.0.1",
+		"color-name-list": "^9.18.1",
+		"color-string": "^1.9.1",
+		"delta-e": "^0.0.8"
+	},
+	"devDependencies": {
+		"@types/color-convert": "^2.0.0",
+		"@types/color-string": "^1.5.2",
+		"@types/delta-e": "^0.0.0",
+		"@types/node": "~18.6.2",
+		"@types/react": "^18.0.15",
+		"@typescript-eslint/eslint-plugin": "^5.31.0",
+		"@typescript-eslint/parser": "^5.31.0",
+		"eslint": "^8.20.0",
+		"eslint-config-prettier": "^8.5.0",
+		"npm-check-updates": "^16.0.1",
+		"react-devtools": "^4.25.0",
+		"typescript": "^4.7.4"
+	},
+	"scripts": {
+		"build": "ray build -e dist",
+		"dev": "ray develop",
+		"lint": "ray lint",
+		"upgrade": "npm-check-updates -u"
+	}
+}
